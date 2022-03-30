@@ -3,6 +3,7 @@ import { Typography, AppBar, Button, Card, CardActions, CardContent, CardMedia, 
 import { PhotoCamera } from '@material-ui/icons'
 import useStyles from './style'
 
+
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
         <Toolbar>
           <PhotoCamera className={classes.icon} />
           <Typography variant="h6">
-            Photo Album
+            Nature Photos
           </Typography>
         </Toolbar>
 
@@ -22,7 +23,7 @@ const App = () => {
       <main>
         <div className={classes.container}>
           <Container maxWidth="sm" >
-            <Typography variant="h2" align="center" color="textPrimary" gutterBottom> Photo Album</Typography>
+            <Typography variant="h2" align="center" color="textPrimary" gutterBottom> Nature Photos</Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Hello Everyone Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, minus quas atque voluptatem tempora itaque animi dolorem? Vel amet saepe laborum deserunt molestiae suscipit sit omnis consequuntur. Voluptas exercitationem ab, eaque explicabo dicta soluta?
             </Typography>
@@ -30,12 +31,12 @@ const App = () => {
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
-                    See the Photos
+                    See Images
                   </Button>
                 </Grid>
                 <Grid item >
                   <Button variant="outlined" color="primary">
-                    Secondary
+                    Add Images
                   </Button>
 
                 </Grid>
@@ -51,7 +52,7 @@ const App = () => {
             {cards.map(() => (
               <Grid item key={cards} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-                  <CardMedia className={classes.cardMedia} image="https://source.unsplash.com/random"
+                  <CardMedia className={classes.cardMedia} image="https://source.unsplash.com/random/?nature"
                     title="Image Title" />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5">
@@ -81,10 +82,10 @@ const App = () => {
       </main>
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+              NaturePhotos
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary">
-          Something here to give the footer a purpose
+         Created on 30 March 2022 &copy; naturephotos.com
         </Typography>
       </footer>
 
